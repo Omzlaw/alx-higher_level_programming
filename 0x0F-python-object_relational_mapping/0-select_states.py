@@ -25,7 +25,6 @@ Note:
 
 Author:
   [Your Name]
-
 """
 
 import sys
@@ -33,7 +32,11 @@ import MySQLdb
 
 if __name__ == "__main__":
     # Connect to the MySQL database using command-line arguments
-    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
+    db = MySQLdb.connect(
+        user=sys.argv[1],
+        passwd=sys.argv[2],
+        db=sys.argv[3]
+    )
 
     # Create a cursor object to interact with the database
     c = db.cursor()
@@ -43,3 +46,4 @@ if __name__ == "__main__":
 
     # Print the retrieved states
     [print(state) for state in c.fetchall()]
+
