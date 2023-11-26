@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-2-my_filter_states.py - Displays all values in the 'states' table of the database hbtn_0e_0_usa
+2-my_filter_states.py - Displays all values in the 'states' 
+table of the database hbtn_0e_0_usa
 whose name matches that supplied as an argument.
 
 Usage:
