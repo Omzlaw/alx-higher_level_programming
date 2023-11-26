@@ -1,14 +1,17 @@
 #!/usr/bin/python3
 """
-3-my_safe_filter_states.py - Displays all values in the 'states' table of the database hbtn_0e_0_usa
-whose name matches that supplied as an argument. This script is safe from SQL injections.
+3-my_safe_filter_states.py - Displays all values in the 'states' table of the 
+database hbtn_0e_0_usa whose name matches that supplied as an argument. 
+This script is safe from SQL injections.
 
 Usage:
-  ./3-my_safe_filter_states.py <mysql username> <mysql password> <database name> <state name searched>
+  ./3-my_safe_filter_states.py <mysql username> <mysql password> 
+  <database name> <state name searched>
 
 Description:
-  This script connects to a MySQL database and retrieves records from the 'states' table where
-  the state name matches the provided argument. It is designed to be executed from the command line
+  This script connects to a MySQL database and retrieves 
+  records from the 'states' table where the state name matches the provided argument. 
+  It is designed to be executed from the command line
   with four required arguments:
   - <mysql username>: The username to connect to the MySQL database.
   - <mysql password>: The password associated with the provided username.
@@ -16,8 +19,8 @@ Description:
   - <state name searched>: The state name to search for in the 'states' table.
 
 Note:
-  This script is designed to be safe from SQL injections by directly using the provided state name
-  as a parameter in the query.
+  This script is designed to be safe from SQL injections by directly using 
+  the provided state name as a parameter in the query.
 
 Requirements:
   - Python 3
