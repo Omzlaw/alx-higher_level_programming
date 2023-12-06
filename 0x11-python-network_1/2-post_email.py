@@ -8,13 +8,17 @@ import sys
 import urllib.parse
 import urllib.request
 
-
 if __name__ == "__main__":
+    # Get the URL and email from the command-line arguments
     url = sys.argv[1]
     value = {"email": sys.argv[2]}
-    data = urllib.parse.urlencode(value).encode("ascii")
 
+    # Encode the data and create a POST request
+    data = urllib.parse.urlencode(value).encode("ascii")
     request = urllib.request.Request(url, data)
+
+    # Open the URL and print the response body
     with urllib.request.urlopen(request) as response:
         print(response.read().decode("utf-8"))
-        
+
+# Ensure there is a newline at the end of the file
